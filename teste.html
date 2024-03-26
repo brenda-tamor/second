@@ -1,13 +1,39 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="teste.css">
- </head>
- <body>
-    <div class="container-a"></div>
-    <div class="container-b"></div>
- </body>
- </html>
+</head>
+<body>
+    <h2>Marcar todos:</h2>
+    <input type="checkbox" id="marcar-todos" onclick="marcarTodos()">
+    <label for="marcar-todos">Marcar Todos</label>
+
+    <h2>Escola suas frutas favoritas:</h2>
+    <input type="checkbox" class="fruta" id="banana" name="fruta" value="banana">
+    <label for="banana">Banana</label> <br>
+    <input type="checkbox" class="fruta" id="maca" name="fruta" value="maca">
+    <label for="banana">Maçã</label> <br>
+    
+    <input type="checkbox" class="fruta" id="laranja" name="fruta" value="laranja">
+    <label for="banana">Laranja</label> <br>
+
+
+    <script>
+        function marcarTodos() {
+            var marcarTodosCheckbox = document.getElementById('marcar-todos');
+            var checkboxesFrutas = document.querySelectorAll('.fruta')
+
+            checkboxesFrutas.forEach(function(checkbox) {
+                checkbox.checked = marcarTodosCheckbox.checked;
+            }
+            )
+        }
+        /*Exemplo de checkbox completo. Usar para inserir nos checkboxes da home. */
+    </script>
+    
+
+
+</body>
+</html>
