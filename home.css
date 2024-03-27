@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 
@@ -9,7 +10,7 @@
 }
 
 body {
-    font-family:sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 
@@ -66,7 +67,8 @@ nav a:hover {
 }
 
 .banner-area {
-    background-image: url('img/pexels-sombreamento2.jpg');
+    background-image: url('img/Group\ 90.png');
+
     background-size: cover;
     background-position: center center;
     top: 100px;
@@ -210,7 +212,34 @@ button {
     border-radius: 3px;
     text-decoration: none;
   }
+  .btn-check  {
+    content:'';
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    /*vertical-align: middle;*/
+    margin-right: 8px;
+    margin-bottom: 3px;
+    color: #000000;
+    
+  }
+  .btn-check:hover {
+    background-color:#ffa600;
+    
+  }
 
+  h3 {
+    background-color: #e94c0e;
+    color: #000000;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    width:100%
+     }
+  
 
 
   /*.check {
@@ -288,14 +317,17 @@ button {
   }
 
   .checkboxes1 input:checked + label:before {
-    background-color: rgb(255, 166, 0);
+    background-color: #ffa600;
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
 
 
   }
 
 
-
+.logo-home{
+    width: 50px;
+    height: 50px;
+}
 
 
 
