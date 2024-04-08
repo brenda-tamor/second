@@ -15,11 +15,11 @@
                 <a href="login.html"><img   class="logo-home" src="img/logo white 1.png" alt=""></a>
             </div>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Tasks/Reports</a>
-                <a href="#">Logs</a>
-                <a href="#">FAQ</a>
+                <a href="home.html">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/tasks.html">Tasks/Reports</a>
+                <a href="pages/logs.html">Logs</a>
+                <a href="pages/faq.html">FAQ</a>
             </nav>
 
         </div>
@@ -32,7 +32,7 @@
     <div class="wrapper" >
         <h2>Text details</h2>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <mark><strong>Lorem Ipsum</strong></mark> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
         <p>
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
@@ -190,10 +190,44 @@
     </div>
 
 
+    <div class="checkboxes1">
+       
+        <input type="checkbox" id="marcar-todos" onclick="marcarTodos()">
+        <label for="marcar-todos">Marcar Todos</label>
+    
+
+        <input type="checkbox" class="fruta" id="banana" name="fruta" value="banana">
+        <label for="banana">Banana</label> <br>
+        <input type="checkbox" class="fruta" id="maca" name="fruta" value="maca">
+        <label for="banana">Maçã</label> <br>
+        
+        <input type="checkbox" class="fruta" id="laranja" name="fruta" value="laranja">
+        <label for="banana">Laranja</label> <br>
+    
+    
+        <script>
+            function marcarTodos() {
+                var marcarTodosCheckbox = document.getElementById('marcar-todos');
+                var checkboxesFrutas = document.querySelectorAll('.fruta')
+    
+                checkboxesFrutas.forEach(function(checkbox) {
+                    checkbox.checked = marcarTodosCheckbox.checked;
+                }
+                )
+            }
+            /*Exemplo de checkbox completo. Usar para inserir nos checkboxes da home. */
+        </script>
+        
+
+
+     </div>
+
+    
+
+
+
+
 </div>
 </div>
-
-
-
 </body>
 </html>
